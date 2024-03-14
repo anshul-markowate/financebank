@@ -118,3 +118,14 @@ body {
 .pdf-link{
     color: darkblue;
 }
+
+.img-container{
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .child-img{
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+  }
