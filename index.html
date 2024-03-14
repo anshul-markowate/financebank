@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Finance Bank</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2 class="title">Menu</h2>
+        <div class="accordion-container">
+            <div class="accordion-container">
+                <button class="accordion">Mortgage Details</button>
+                <div class="panel">
+                    <a href="./mortgage-Rate.html">Mortgage Rates</a>
+                    <a href="./mortgage-applications.html">Mortgage Applications</a>
+                    <a href="./mortgage-market-trends.html">Mortgage Market Trends</a>
+                </div>
+            </div>
+            <button class="accordion">Terms and Details</button>
+            <div class="panel">
+                <a href="./housing-affordability.html">Housing Affordability</a>
+                <a href="./foreclosure-rates.html">Foreclosure Rates</a>
+                <a href="./refinance-activity.html">Refinance Activity</a>
+            </div>  
+        </div>
+    </div>
+
+    <div class="content">
+        <h1 class="title">Finance Bank</h1>
+        <p class="title-para">Finance Bank, known for its expertise in financial services, also operates as a prominent mortgage company,
+            offering a comprehensive range of mortgage products and services. With a commitment to assisting clients in
+            achieving their homeownership goals, Finance Bank provides tailored mortgage solutions designed to suit
+            individual needs and preferences. Whether customers are first-time homebuyers, seasoned investors, or
+            individuals seeking to refinance existing mortgages, Finance Bank offers competitive rates, flexible terms,
+            and personalized guidance throughout the mortgage process. Leveraging advanced technology and a team of
+            experienced mortgage professionals, Finance Bank ensures a seamless and efficient application process, from
+            initial consultation to closing. As a trusted mortgage provider, Finance Bank prioritizes transparency,
+            integrity, and customer satisfaction, striving to make the dream of homeownership a reality for clients
+            while fostering long-term financial success.</p>
+        <div>
+            <div class="accordion-container">
+                <button class="accordion">Mortgage Rates</button>
+                <ul class="panel">
+                    <li>Average 30-year fixed mortgage rate: 3.5% (as of January 2024)</li>
+                    <li>Average 15-year fixed mortgage rate: 2.8% (as of January 2024)</li>
+                    <li><a class="pdf-link" href="./pdfs/mortgage/CoreRangeCustomerRateSheet.pdf">All about Mortgage Rate</a></li>
+                </ul>     
+            </div>
+
+            <div class="accordion-container">
+                <button class="accordion">Home Prices</button>
+                <ul class="panel">
+                    <li>Median home price: $300,000 (as of January 2024)</li>
+                    <li>Home prices have seen steady appreciation over the past few years, driven by low inventory, high
+                        demand, and low mortgage rates.</li>
+                    <li><a href="./home-prices.html">Home Prices</a></li>
+                </ul>
+            </div>
+
+            <div class="accordion-container">
+                <button class="accordion">Mortgage Applications</button>
+                <ul class="panel">
+                    <li>Mortgage application volume index: 4000 (as of January 2024)</li>
+                    <li>Mortgage applications have been fluctuating due to changes in interest rates and economic
+                        conditions. Refinance applications have decreased compared to previous years, while purchase
+                        applications remain strong.</li>
+                </ul>
+            </div>
+
+            <div class="accordion-container">
+                <button class="accordion">Delinquency Rates</button>
+                <ul class="panel">
+                    <li>Mortgage delinquency rate: 3.0% (as of January 2024)</li>
+                    <li>Delinquency rates have been relatively low due to economic recovery and government assistance
+                        programs during the COVID-19 pandemic.</li>
+                    <li><a href="./home-prices.html">Delinquency Rates</a></li>
+                </ul>
+            </div>
+
+            <div class="accordion-container">
+                <button class="accordion">Foreclosure Rates</button>
+                <ul class="panel">
+                    <li>Foreclosure inventory rate: 0.5% (as of January 2024)</li>
+                    <li>Foreclosure rates remain low due to government moratoriums and foreclosure prevention measures
+                        implemented during the pandemic.</li>
+                </ul>
+            </div>
+
+            <div class="accordion-container">
+                <button class="accordion">Housing Affordability</button>
+                <ul class="panel">
+                    <li>Housing affordability index: 150 (as of January 2024)</li>
+                    <li>Housing affordability has become a concern in some areas, particularly for first-time
+                        homebuyers, due to rising home prices outpacing income growth.</li>
+                </ul>
+            </div>
+
+            <div class="accordion-container">
+                <button class="accordion">Refinance Activity</button>
+                <ul class="panel">
+                    <li>Share of refinance originations: 30% (as of January 2024)</li>
+                    <li>Refinance activity has slowed compared to previous years but remains a significant portion of
+                        mortgage originations, driven by homeowners seeking to lower their monthly payments or tap into
+                        home equity.</li>
+                </ul>   
+            </div>
+
+            <div class="accordion-container">
+                <button class="accordion">Mortgage Market Trends</button>
+                <ul class="panel">
+                    <li>Rise of digital mortgage platforms facilitating online applications and document submission.
+                    </li>
+                    <li>Increasing use of AI and machine learning in mortgage underwriting processes to streamline
+                        approval and reduce turnaround times.</li>
+                    <li>Continued focus on sustainability and energy-efficient mortgages to promote environmentally
+                        friendly homeownership.</li>
+                    <li><a class="pdf-link" href="./pdfs/mortgage/the-evolving-mortgage-market.pdf">The evolving mortgage market</a></li>    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
